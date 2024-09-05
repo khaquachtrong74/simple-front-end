@@ -1,5 +1,4 @@
 // cho load nội dung html từ file khác
-
 export function load(num) {
     fetch(`../Find_job/noidung/noidung${num}.html`)
         .then(response => response.text())
@@ -409,8 +408,32 @@ export function tuyenDung() {
 }
 // js cho trang Mẫu CV tham khảo và cẩm nang
 export function Cv() {
+    const dataLinks = 'https://www.canva.com/design/DAGOpbzpGlQ/6Ls02t4LAJI31-48oT5I-A/edit';
     let selectedLink = ''; // Biến toàn cục để lưu liên kết của CV được chọn
     let lists = document.querySelectorAll('.image-list');
+    let spanCloseModel = document.getElementsByClassName('modal-close');
+    let applyChange = document.getElementsByClassName('apc');
+    for(let apc of applyChange){
+        apc.addEventListener('click',function(){
+            applyChanges();
+        })
+    }
+    for(let sp of spanCloseModel){
+        sp.addEventListener('click',function(){
+            closeModal();
+        })
+    }
+    lists.forEach(ls => {
+        let childrenLists = ls.children; // Các phần tử li
+        for (let i = 0; i < childrenLists.length; i++) {
+            childrenLists[i].addEventListener('click', function () {
+                // Lấy phần tử img bên trong li
+                let imgElement = childrenLists[i].querySelector('img');
+                let imgSrc = imgElement.src;
+                openModal(imgSrc, dataLinks); 
+            });
+        }
+    });
 
     function filterImages(category) {
         lists.forEach(list => {

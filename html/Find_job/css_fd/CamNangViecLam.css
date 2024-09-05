@@ -1,0 +1,166 @@
+main#camNangViecLam .banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0;
+    margin-bottom: 10px;
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    overflow: hidden;
+}
+
+main#camNangViecLam .banner-container img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* CSS cho các nút lọc */
+main#camNangViecLam .ftButton {
+    margin: 20px auto 20px auto;
+    justify-self: center;
+    text-align: center;
+    width: 70%;
+    padding: 5px;
+    position: absolute;
+    border-radius: 12px;
+    background: #ffffff1a;
+    border: 1px solid #ffffff20;
+    backdrop-filter: blur(16px) saturate(120%);
+    gap: 10px;
+}
+
+main#camNangViecLam .ftButton button {
+    /*padding: 10px 20px;*/
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #ffffff00;
+    background: #ffffff00;
+    color: darkorange;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+    transition: opacity 0.3s, color 0.3s;
+}
+
+main#camNangViecLam .ftButton button > span {
+    position: relative;
+}
+
+main#camNangViecLam .ftButton button > span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    background-color: darkorange;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+main#camNangViecLam .ftButton button > span:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+main#camNangViecLam .ftButton button.active {
+    color: white;
+    padding: 10px;
+    opacity: 1;
+    border-radius: 20px;
+    background-color: darkorange;
+}
+
+main#camNangViecLam ul {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 0;
+    margin: auto;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+main#camNangViecLam li {
+    width: 32.3%;
+    border: 0.5px solid silver;
+    border-radius: 10px;
+    padding: 0.5%;
+    margin: 0.5%;
+    box-sizing: border-box;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+main#camNangViecLam div.imgLists li{
+    width: 32.3%;
+    border: 0.5px solid silver;
+    border-radius: 10px;
+    padding: 0.5%;
+    margin: 0.5%;
+    box-sizing: border-box;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+main#camNangViecLam div.imgLists li:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: dodgerblue;
+    transform: scale(1.1,1.1);
+    
+}
+.notHover
+{
+    transform: scale(0.9,0.9);
+    filter: blur(1.5px) ;
+}
+/* main#camNangViecLam .lists div.imgLists:hover + div.imgLists:not(:hover){
+    transform: scale(0.9,0.9);
+    filter: blur(1.5px);
+} */
+
+main#camNangViecLam .lists .main-text, .sub-text {
+    line-height: 1.5;
+    margin: 10px 0;
+    padding: 0;
+    position: relative;
+}
+
+main#camNangViecLam .lists .main-text {
+    font-size:16px;
+    font-weight: bold;
+    color: black;
+}
+
+main#camNangViecLam .lists li {
+    overflow: hidden;
+    padding: 10px;
+}
+
+main#camNangViecLam .lists img {
+    float: left;
+    margin-right: 10px;
+    width: 25%;
+}
+
+main#camNangViecLam .lists .main-text, .time, .sub-text {
+    margin: 8%;
+}
+
+main#camNangViecLam .lists .sub-text {
+    font-size: 16px;
+    font-weight: normal;
+    color: grey;
+}
+
+main#camNangViecLam .lists .time {
+    font-size: 16px;
+    font-weight: normal;
+    color:  dodgerblue;
+}

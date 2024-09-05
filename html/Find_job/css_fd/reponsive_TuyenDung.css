@@ -1,0 +1,28 @@
+@media (max-width: 768px){
+    main#nhaTuyenDung div#tao div#dichVu ul{
+        flex-direction: column;
+        
+    }
+    main#nhaTuyenDung div#tao div#dichVu ul li{
+        width:100%;
+        margin:20px;
+        margin-left:0;
+    }
+    main#nhaTuyenDung>div#kc{
+        height:2000px;
+    }
+    main#nhaTuyenDung div#baiViet>div{
+        width:100%;
+    }
+    main#nhaTuyenDung div#hien{
+        position: relative;
+        margin-top:50px;
+    }
+    main#nhaTuyenDung div#hien>div#hienThi>div#hienThiTrong{
+        font-size:12px;
+    }
+    div#imgQuangCao{
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+}

@@ -1,0 +1,125 @@
+@media (min-width: 400px) and (max-width: 768px){
+    /* Mẫu CV */
+    main#cv .filter-buttons{
+        width:70%;
+    }
+    main#cv .filter-buttons button > span{
+        color:black;
+        font-size: 16px;
+    }
+    main#cv .canva-lists .main-text, main#cv .mean-is-CV .main-text{
+        font-size: 22px;
+    }
+    main#cv .canva-lists button{
+        font-size:16px;
+    }
+    main#cv .free-CV .main-text, main#cv .pay-attention-CV .main-text, main#cv .mail-CV .main-text{
+        font-size: 22px;
+    }
+    main#cv .canva-lists .sub-text, main#cv .free-CV .sub-text, main#cv .mean-is-CV .sub-text, main#cv .pay-attention-CV .sub-text, main#cv .mail-CV .sub-text{
+        font-size:14px;
+    }   
+    main#cv .mail-CV .main-num{
+        font-size: 22px;
+    }
+
+    /*Cẩm nang  */
+    main#camNangViecLam .ftButton{
+        width:90%;
+    }
+    main#camNangViecLam .lists .sub-text {
+        font-size:12px;
+    }
+    main#camNangViecLam .lists .main-text{
+        font-size:14px;
+    }
+  
+
+
+
+
+
+
+
+}
+@media (max-width: 400px){
+    main#cv .filter-buttons{
+        width:70%;
+    }
+    main#cv .filter-buttons button > span{
+        color:black;
+        font-size:12px;
+    }
+    main#cv .canva-lists .main-text, main#cv .mean-is-CV .main-text{
+        font-size: 18px;
+    }
+    main#cv .canva-lists button{
+        font-size:14px;
+    }
+    main#cv .free-CV .main-text, main#cv .pay-attention-CV .main-text, main#cv .mail-CV .main-text{
+        font-size: 12px;
+    }
+    main#cv .canva-lists .main-text, main#cv .canva-lists .sub-text, main#cv .free-CV .main-text, main#cv .free-CV .sub-text{
+        font-size:12px;
+    }
+    main#cv .canva-lists .sub-text, main#cv .free-CV .sub-text, main#cv .mean-is-CV .sub-text, main#cv .pay-attention-CV .sub-text, main#cv .mail-CV .sub-text{
+        font-size:12px;
+    }
+    main#cv .pay-attention-CV .pay-attention-CV-items-1 .main-text, main#cv .pay-attention-CV .pay-attention-CV-items-2 .main-text, main#cv .pay-attention-CV .pay-attention-CV-items-3 .main-text, main#cv .pay-attention-CV .pay-attention-CV-items-4 .main-text{
+        font-size:14px;
+    }
+    main#cv .mail-CV .main-num {
+        font-size:18px;
+    }
+    main#cv .mail-CV .mail-items .sub-text{
+        font-size:14px;
+    }
+ 
+    main#cv .canva-lists .main-text, main#cv .mean-is-CV .main-text{
+        font-size: 14px;
+    }
+
+    main#cv .pay-attention-CV .pay-attention-CV-items-1 .main-text, main#cv .pay-attention-CV .pay-attention-CV-items-2 .main-text, main#cv .pay-attention-CV .pay-attention-CV-items-3 .main-text, main#cv .pay-attention-CV .pay-attention-CV-items-4 .main-text{
+        font-size:14px;
+    }
+
+    main#cv .mail-CV .mail-items .sub-text{
+        font-size:10px;
+    }
+    main#cv ul{
+        flex-direction: column;
+    }
+    main#cv li{
+        width:100%;
+        margin-bottom:25px;
+    }
+
+    /* Camar nang */
+    main#camNangViecLam ul{
+        flex-direction: column;   
+        width: 100%;
+    }
+    main#camNangViecLam ul li{
+        width:100%;
+    } 
+    main#camNangViecLam div.imgLists li{
+        width:100%;
+    }
+    main#camNangViecLam .ftButton{
+        margin-bottom:20px;
+    }
+    main#cv .pay-attention-CV .pay-attention-CV-items-1{
+        width:100%;
+    }
+    main#cv .pay-attention-CV .pay-attention-CV-items-2{
+        width:100%;
+    }
+    main#cv .pay-attention-CV .pay-attention-CV-items-3{
+        width:100%;
+    }
+    main#cv .pay-attention-CV .pay-attention-CV-items-4{
+        width:100%;
+        margin-bottom:25px;
+    }
+    
+}

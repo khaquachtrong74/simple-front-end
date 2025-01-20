@@ -88,7 +88,7 @@ function smothScroll(){
     })
 }
 window.onload = ()=>{ 
-    draw();
+    draw(); 
     smothScroll();
     animateLineText("h1.roadmap-h1");
 }

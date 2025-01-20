@@ -6,7 +6,8 @@
     <meta name="author" content="Detbeed">
     <meta name="purpose" content="practice and learning design">
     <link rel="stylesheet" href="./CSS/index.css">
-    <link rel="shotcut icon" href="Images/avatar-294480_1280.jpg">
+    <link rel="shotcut icon" href="Images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>No Times</title>
     <!-- <script src="https://unpkg.com/bpmn-js@8.7.0/dist/bpmn-viewer.development.js"></script> -->
     <script src="JS/index.js"></script>
@@ -15,16 +16,23 @@
     <header>
         <!-- <h1>Welcome</h1> -->
         <nav>
-            <span><a class ="smooth-scroll" href="#HOME">Home</a></span>
-            <span><a class ="smooth-scroll" href="#roadmap">Roadmap</a></span>
-            <span>Documents</span>
-            <span>Contact</span>
+          <div class="flex flex-first">
+            <div>KHA</div>
+            <div class="flex flex-nav">
+              <span><a class ="smooth-scroll" href="#HOME">Home</a></span>
+              <span><a class ="smooth-scroll" href="#roadmap">Roadmap</a></span>
+              <span>Resume</span>
+              <span>Work</span>
+              <span>Contact</span>
+              <span id="hire-me">Hire me</span>
+            </div>
+          </div>
         </nav>
         <!-- <div class="block"></div> -->
     </header>
     <main>
         <section id="HOME">
-            <div class="div-flex-box">
+            <div class="flex flex-div-box">
                 <div class="container">
                     <img src="Images/Admin.jpg" alt="Detbeed" id="user_img"> 
                 </div>
@@ -37,6 +45,11 @@
                 <p>Huh, you don't know where to start!</p><br>
                 <p>Don't worry about that, I will guide you step by step.</p>
                 </div>
+            </div>
+            <div class="flex block">
+                <div class="flex-block flex">Downloads <i class="fa-solid fa-file-arrow-down"></i></div>
+                <div class="flex-block"><i class="fa-brands fa-github"></i></div>
+                <div class="flex-block flex"><i class="fa-regular fa-envelope"></i></div>
             </div>
         </section>
         <section id="roadmap">

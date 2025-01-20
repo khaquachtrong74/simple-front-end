@@ -8,6 +8,7 @@
     /* --background-hacker-color: rgb(11, 17, 10); */
     /* --text-hacker-color: rgb(32, 220, 42); */
     --purple-color: rgb(136, 61, 242);
+    --text-color :rgba(0, 0, 0, 0.853);
 
 }
 *{
@@ -39,6 +40,7 @@
     }
     a{
         text-decoration: none;
+        color:var(--text-color);
     }
     section{
         width:100%;
@@ -74,10 +76,14 @@ a:active{
     color:var(--purple-color);
 }
 a:visited{
-    color:rgba(0, 0, 0, 0.853);
+    color:var(--text-color);
 }
 
 /* Body */
+/* HOME */
+section#HOME{
+    margin-bottom:var(--larg-larg-h);
+}
 #user_img{
     height:100%;
     /* position: absolute; */
@@ -133,6 +139,9 @@ section#doc{
 
 
 /* roadmap */
+section#roadmap{
+    padding-top:0;
+}
 section#roadmap h1{
     font-size: 3rem;
     text-align: center;

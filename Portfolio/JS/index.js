@@ -76,7 +76,19 @@ function animateLineText(obj){
         })
     })
 }
+
+function smothScroll(){
+    document.querySelectorAll("a.smooth-scroll").forEach(a => {
+        a.addEventListener("click",function(e){
+            e.preventDefault(); // Ngăn cho trình duyệt di chuyển theo mặc định
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: "smooth"
+            })
+        })
+    })
+}
 window.onload = ()=>{ 
     draw();
+    smothScroll();
     animateLineText("h1.roadmap-h1");
 }

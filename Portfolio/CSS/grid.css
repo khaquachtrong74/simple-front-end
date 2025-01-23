@@ -1,0 +1,18 @@
+#container{
+    width:90%;
+    margin:auto;
+    height:2000px;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-areas: 
+        "header nav"
+        "main-image main-text"
+        "sidebar sidebar-info"
+        "main-roadmap main-roadmap"
+        "footer footer"
+    ;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 15% 25% 15% 10% 10%;
+    grid-gap: 50px;
+    /* grid-template-columns: repeat(2, 1fr); */
+}

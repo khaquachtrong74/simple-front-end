@@ -3,7 +3,9 @@
     --y: 22px;
 }
 .header{
-    padding:var(--x);
+    display: flex;
+    justify-content: center;
+
 }
 
 ul>li{
@@ -61,4 +63,18 @@ h1.roadmap-h1{
 }
 .sidebar-roadmap h1{
     background-color: black;
+}
+/* footer */
+.footer{
+    font-size: 32px;
+    color:white;
+    background-color: black;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+}
+.footer:last-child{
+    text-decoration: line-through;
 }

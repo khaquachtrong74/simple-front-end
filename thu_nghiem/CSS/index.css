@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+  gap: 15px;
+  padding: 20px;
+}
+
+.item {
+  background: #007BFF;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Các biến thể bất đối xứng */
+.item-large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.item-tall {
+  grid-row: span 2;
+}
+
+.item-wide {
+  grid-column: span 2;
+}
+
+/* Hiệu ứng hover */
+.item:hover {
+  transform: scale(1.05);
+  background: #0056b3;
+}
+
+/* --------- Responsive Design --------- */
+
+/* Màn hình dưới 768px (Tablet) */
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+
+  .item {
+    font-size: 18px;
+  }
+
+  /* Giảm số cột span để vừa với màn hình nhỏ */
+  .item-large,
+  .item-wide {
+    grid-column: span 1;
+  }
+
+  .item-tall {
+    grid-row: span 1;
+  }
+}
+
+/* Màn hình dưới 480px (Điện thoại) */
+@media (max-width: 480px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr; /* Chỉ còn 1 cột */
+    gap: 8px;
+  }
+
+  .item {
+    height: 180px;
+    font-size: 16px;
+  }
+
+  .item-large,
+  .item-wide,
+  .item-tall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}

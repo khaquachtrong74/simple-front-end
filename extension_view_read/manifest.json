@@ -1,0 +1,13 @@
+{
+    "manifest_version":3,
+    "name": "Dark Mode Enforcer",
+    "version" : "1.0",
+    "description" : "🧙‍♂️ Cho chạy web với nền đen và chữ trắng -> dễ đọc",
+    "content_scripts":[
+        {
+            "matches": ["<all_urls>"],
+            "js": ["dark_mode.js"],
+            "run_at": "document_start"
+        }
+    ]
+}

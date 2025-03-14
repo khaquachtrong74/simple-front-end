@@ -9,5 +9,10 @@
             "js": ["dark_mode.js"],
             "run_at": "document_start"
         }
-    ]
+    ],
+    "icons": {
+        "16":"./images/main_wizard_small.png",
+        "48":"./images/main_wizard_medium.png",
+        "128":"./images/main_wizard.png"
+    }
 }

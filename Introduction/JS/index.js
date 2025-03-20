@@ -7,15 +7,15 @@ window.onload = function(){
     let a_two_items = document.querySelector('a');
     btn_change_view.addEventListener('click',() => {
         if(flg){
-            docBody.setAttribute("style","color:white; background-color: black !important; transition: background-color .8s ease");
-            div_two_items.setAttribute('style','background-color:black;transition: background-color .8s ease');
+            docBody.setAttribute("style","color:white; background-color: black !important;");
+            div_two_items.setAttribute('style','background-color:black;');
             h1_two_items.style.color = 'white';
             
             btn_change_view.textContent = '🌚';
             flg = false;
         }
         else{
-            docBody.setAttribute("style","color:black; background-color: white !important; transition: none");
+            docBody.setAttribute("style","color:black; background-color: white !important;");
             btn_change_view.textContent = '🌞';
             div_two_items.setAttribute('style','background-color:white; background-color none');
             h1_two_items.style.color = 'black';

@@ -4,59 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Auto refresh for live-server-local tools of Go -->
+    <meta http-equiv="refresh" content="5" > 
+    <!-- Import css -->
     <link rel="stylesheet" href="CSS/index.css">
-    <title>Document</title>
+    <title>Introduction</title>
 </head>
-
 <body>
-    <header>
-        <div id="two_items">
-            <span id = 'c_view'>🌞</span>
-            <h1>👋 Hi stranger, what wind get you here!</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#not_about">Not about me</a></li>
-                <li><a href="#about_yourself">Maybe about yourself</a></li>
-            </ul>
-        </nav>
-        
+    <nav class="mb-2 pl pt">
+        <ul>
+            <li><a href="#about"><span>About me</span></a></li>
+            <li><a href="#project"><span>Projects</span></a></li>
+            <li><a href="#contact"><span>Contact</span></a></li>
+        </ul>
+    </nav>
+    <header class="padding-bt pl pbt">
+        <h1>Quach Trong Kha </h1>
+        <p>I'm learner of software, machine learning and philosophy.</p>
     </header>
-    <main>
-        <div align="left">
-            <img src="Images/hello.gif" alt="Good morning my friend!" width="25%" style="border-radius:25px;">
-        </div>
-        <p>I am exploratory student or you can call me 🦥</p>
-        <section id="about">
-            <h2>
-                Maybe you wonde why I'm 🦥
-            </h2>
-            <p>
-                Just because laziness is my nature, but I really love to build something.<br>
-                Even though I don't know it useful or useless.
-            </p>
+    <main class="pl">
+        <section id="#about">
+            <h1>Somethings about me!</h1>
+            <p>I'm interesting of build Linux OS, CLI tools with bash or programing language</p>
+            <p>Works with computer can make things cool but often make me depression.</p>
+            <p>Aim to get money, skill, knowledge. I also trying to be better than yesterday.</p>
         </section>
-        <section id="not_about">
-            <h2>
-                You know?
-            </h2>
-            <p>
-                Caffeine was first successfully isolated in 1820 by the German chemist Friedlieb Ferdinand
-                Runge by heating roasted coffee beans and collecting the steam produced. Runge carried out this
-                analysis, probably at the request of his friend, the poet Johann Wolfgang von Goethe. On October 3,
-                1819, after a conversation about plant poisons, Goethe sent Runge a package of coffee beans, which were
-                a valuable commodity at the time.
-            </p>
-        </section>
-        <section id="about_yourself">
-            <h2>
-                May be you are young, may be not but I suggest that you should take care of your future!
-            </h2>
-        </section>
-
     </main>
-    <script src="JS/index.js"></script>    
-</body>
+    <footer class="text-center">
+        <p>&copy; 2025 Quach Trong Kha. All rights reserved.</p>
+    </footer>
+    <md-block>
+        # Heading
+        Text **bold text** *italic text* ~strike~
+        Hello Something
+        ---
 
+        ```js
+        test.foo();
+        ```
+        ```html
+        &lt;foo>
+        ```
+
+        * List item 1
+        * List item 2
+    </md-block>
+   <script type="module" src="https://md-block.verou.me/md-block.js"></script> 
+</body>
 </html>
